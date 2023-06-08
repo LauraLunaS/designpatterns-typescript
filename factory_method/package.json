@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/index.ts",
     "uber": "npm run dev -- --uber",
-    "log": "npm run dev -- --log"
+    "log": "npm run dev -- --log",
+    "bike": "npm run dev -- --bike"
   },
   "keywords": [],
   "author": "",

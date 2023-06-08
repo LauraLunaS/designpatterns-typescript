@@ -1,3 +1,4 @@
+import { BikeTransport } from "./transport/BikeTransport";
 import { CarTransport } from "./transport/CarTransport";
 import { MotorcycleTransport } from "./transport/MotorcycleTransport";
 import Transport from "./transport/transport";
@@ -13,6 +14,10 @@ if (process.argv.includes("--uber")) {
 } else if (process.argv.includes("--log")) {
 
     transport = new MotorcycleTransport();
+
+} else if (process.argv.includes("--bike")) {
+
+    transport = new BikeTransport();
 
 } else {
 
