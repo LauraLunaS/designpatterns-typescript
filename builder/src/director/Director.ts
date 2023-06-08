@@ -38,4 +38,14 @@ export default class Director {
 
     }
 
+    constructMotocycle() {
+
+        this.builder.setVehicleType(VehicleType.MOTOCYCLE);
+        this.builder.setSeats(2);
+        this.builder.setTrasmission(Transmission.AUTOMATIC_SEQUENTIAL);
+        this.builder.setEngine(new Engine(1300));
+        this.builder.addWheel(new Wheel(12));
+        this.builder.addWheel(new Wheel(12));
+
+    }
 }
