@@ -1,4 +1,4 @@
-import chalk from 'chalk';
+import chalk = require("chalk");
 import Middleware from "../middlewares/Middleware";
 
 export default class Server {
@@ -15,7 +15,7 @@ export default class Server {
 
         if (this.middleware.check(email, password)) {
 
-            console.log(chalk.green("Usuário autorizado com sucesso!"));
+            console.log("Usuário autorizado com sucesso!");
             return true;
 
         }
